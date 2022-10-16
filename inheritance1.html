@@ -1,0 +1,22 @@
+<script>
+    class a{
+        myfunction1(){
+            console.log("a");
+        }
+    }
+    class b extends a{
+        myfunction2(){
+            console.log("b");
+        }
+        myfunction1(){
+            super.myfunction1()
+            console.log("these b is my 1")
+        }
+    }
+    var rec=new b
+    console.log(rec);
+
+    rec.myfunction1();
+    rec.myfunction2();
+
+</script>
